@@ -1,9 +1,12 @@
 {
     "name": "node-red",
-    "description": "A Node-RED Project",
+    "description": "Orchard House node-red",
     "version": "0.0.1",
     "dependencies": {},
     "node-red": {
-        "settings": {}
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
     }
 }
