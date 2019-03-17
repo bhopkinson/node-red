@@ -7,3 +7,4 @@ RUN npm install node-red-contrib-time-range-switch
 RUN npm install node-red-contrib-timerswitch
 RUN npm install node-red-contrib-influxdb
 RUN npm install node-red-contrib-tado-client
+RUN npm install node-red-contrib-traffic
