@@ -8,3 +8,4 @@ RUN npm install node-red-contrib-timerswitch
 RUN npm install node-red-contrib-influxdb
 RUN npm install node-red-contrib-tado-client
 RUN npm install node-red-contrib-traffic
+RUN npm install node-red-contrib-stoptimer
