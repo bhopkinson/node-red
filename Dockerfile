@@ -12,3 +12,4 @@ RUN npm install node-red-contrib-traffic
 RUN npm install node-red-contrib-stoptimer
 RUN npm install node-red/node-red-dashboard
 RUN npm install node-red-contrib-timecheck
+RUN npm install node-red-contrib-key-value-store
