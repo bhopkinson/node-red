@@ -15,3 +15,4 @@ RUN npm install node-red-contrib-timecheck
 RUN npm install node-red-contrib-key-value-store
 RUN npm install node-red-contrib-moment
 RUN npm install node-red-contrib-dsm
+RUN npm install bhopkinson/node-red-contrib-tuya-local#769476e
