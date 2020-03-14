@@ -1,37 +1,16 @@
-name: Docker Image CI
-
+name: Publish Docker
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
+    paths: Dockerfile
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag bjh101/node-red:latest
-
-    - name: Docker Publish
-      uses: manusa/actions-publish-docker@v1.0.1
+    - name: Publish to Registry
+      uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
-        # Name of the Docker image
-        name: bjh101/node-red:latest
-        # Tag for the Docker image
-        tag: latest
-        # Script body to compute tag name for the Docker image, has context as the main function argument
-        # tag script: # optional
-        # Username for Docker registry
-        username: bjh101
-        # Password for Docker registry
-        password: ${{ secrets.docker_hub_password }}
-        # Registry URL
-        # registry: # optional
-        # Don't skip pull requests
-        # include pull requests: # optional
-
+        name: bjh101/node-red
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        snapshot: true
