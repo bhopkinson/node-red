@@ -16,4 +16,5 @@ RUN npm install node-red-contrib-moment
 RUN npm install node-red-contrib-dsm
 RUN npm install node-red-contrib-mapper
 RUN npm install node-red-node-email
+RUN npm install node-red-node-random
 RUN npm install bhopkinson/node-red-contrib-tuya-local#769476e
