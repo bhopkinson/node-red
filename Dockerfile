@@ -10,10 +10,10 @@ RUN npm install node-red-contrib-influxdb
 RUN npm install node-red-contrib-tado-client
 RUN npm install node-red-contrib-traffic
 RUN npm install node-red-contrib-stoptimer
-RUN npm install node-red/node-red-dashboard
 RUN npm install node-red-contrib-timecheck
 RUN npm install node-red-contrib-key-value-store
 RUN npm install node-red-contrib-moment
 RUN npm install node-red-contrib-dsm
-RUN npm install npm install node-red-contrib-mapper
+RUN npm install node-red-contrib-mapper
+RUN npm install node-red-node-email
 RUN npm install bhopkinson/node-red-contrib-tuya-local#769476e
