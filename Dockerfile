@@ -1,4 +1,4 @@
-FROM nodered/node-red
+FROM nodered/node-red:latest
 RUN npm install node-red-contrib-home-assistant-websocket
 RUN npm install node-red-contrib-credentials
 RUN npm install node-red-contrib-uuid
@@ -15,6 +15,8 @@ RUN npm install node-red-contrib-key-value-store
 RUN npm install node-red-contrib-moment
 RUN npm install node-red-contrib-dsm
 RUN npm install node-red-contrib-mapper
+RUN npm install node-red-contrib-actionflows
 RUN npm install node-red-node-email
 RUN npm install node-red-node-random
 RUN npm install bhopkinson/node-red-contrib-tuya-local#769476e
+RUN npm install node-red-contrib-alarm
