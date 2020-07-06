@@ -1,4 +1,4 @@
-FROM nodered/node-red
+FROM nodered/node-red:latest
 RUN npm install node-red-contrib-home-assistant-websocket
 RUN npm install node-red-contrib-credentials
 RUN npm install node-red-contrib-uuid
